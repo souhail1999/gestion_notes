@@ -25,4 +25,10 @@ public class etudiant implements Comparable<etudiant> {
 		}
 		return -1;
 	}
+	public void changenote(int note) {
+		this.note=note;
+	}
+	public double getnote(){
+		return this.note;
+	}
 }
