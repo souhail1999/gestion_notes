@@ -5,14 +5,10 @@ import java.util.List;
 import gestoin_notes.etudiant;
 
 public class listetudiants extends ArrayList<etudiant> {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private List<etudiant> j;
 	public boolean add(etudiant e) {
 		if(this.contains(e)) {
-	    	super.set(modCount, e);
+	    	super.set(indexOf(e),e);
 	    	return false;
 	    }super.add(e);
 		return true;
